@@ -6,17 +6,9 @@ from googleapiclient.discovery import build
 YOUTUBE_API_KEY = ""
 SEARCH_QUERY = ""  # Theme précis
 MAX_RESULTS = 10  # Nombre max de résultats de recherche
-DOWNLOADED_FILE = "downloaded_videos.json"  # Fichier pour suivre les vidéos téléchargées
 
 # Créer un client YouTube
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
-
-# Charger les vidéos déjà téléchargées
-if os.path.exists(DOWNLOADED_FILE):
-    with open(DOWNLOADED_FILE, "r") as f:
-        downloaded_videos = json.load(f)
-else:
-    downloaded_videos = []
 
 # Recherche de vidéos sur YouTube
 def search_youtube(query, max_results):
