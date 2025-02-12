@@ -16,7 +16,7 @@ Before you can run the script, you need to have installed the following dependen
 1. Clone this repository or download the source code to your machine.
 2. Install the necessary dependencies with `pip` :
 
-    ``bash
+    ```bash
     pip install google-api-python-client
     ```
     
