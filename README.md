@@ -1,46 +1,43 @@
-# Recherche et Téléchargement de Vidéos YouTube #Shorts
+# Search and Download YouTube Videos #Shorts
 
-Ce projet permet de rechercher des vidéos YouTube basées sur un thème spécifique et de sauvegarder les vidéos trouvées dans un fichier JSON pour téléchargement ultérieur.
+This project allows you to search for YouTube videos based on a specific theme and save the videos found in a JSON file for later download.
 
-Le script utilise l'API YouTube Data v3 pour effectuer des recherches et récupérer des vidéos avec un hashtag `#shorts` et une durée courte. Le fichier JSON généré contient les identifiants et les titres des vidéos.
+The script uses the YouTube Data v3 API to search and retrieve videos with a hashtag `#shorts` and a short duration. The JSON file generated contains video IDs and titles.
 
-## Prérequis
+## Prerequisites
 
-Avant de pouvoir exécuter le script, vous devez avoir installé les dépendances suivantes :
+Before you can run the script, you need to have installed the following dependencies:
 
-- **Python 3** : Le script est écrit en Python 3.
-- **Google API Client Library** : Utilisé pour interagir avec l'API YouTube Data v3.
+- Python 3** : The script is written in Python 3.
+- Google API Client Library**: Used to interact with the YouTube Data v3 API.
 
-### Installation des dépendances
+### Installing dependencies
 
-1. Clonez ce dépôt ou téléchargez le code source sur votre machine.
-2. Installez les dépendances nécessaires avec `pip` :
+1. Clone this repository or download the source code to your machine.
+2. Install the necessary dependencies with `pip` :
 
-    ```bash
+    ``bash
     pip install google-api-python-client
     ```
-
+    
 ## Configuration
 
-1. **API YouTube** : Vous devez générer une clé API YouTube en suivant les étapes suivantes :
-   - Allez sur [Google Developers Console](https://console.developers.google.com/).
-   - Créez un projet et activez l'API YouTube Data v3.
-   - Générez une clé API et remplacez la valeur `YOUTUBE_API_KEY` dans le script avec votre clé.
+1. **YouTube API**: You need to generate a YouTube API key by following the steps below:
+   - Go to [Google Developers Console](https://console.developers.google.com/).
+   - Create a project and activate the YouTube Data v3 API.
+   - Generate an API key and replace the value `YOUTUBE_API_KEY` in the script with your key.
 
-2. **Recherche** : Spécifiez le thème de recherche en modifiant la variable `SEARCH_QUERY` dans le script. Par exemple, vous pouvez rechercher des vidéos liées à un sujet spécifique comme "tech", "gaming", etc.
+2. **Search**: Specify the search theme by modifying the `SEARCH_QUERY` variable in the script. For example, you can search for videos related to a specific topic such as “tech”, “gaming”, etc.
 
-3. **Résultats Max** : Modifiez la variable `MAX_RESULTS` pour définir le nombre maximum de résultats à récupérer (jusqu'à 50).
+3. **Max Results**: Modify the `MAX_RESULTS` variable to define the maximum number of results to be retrieved (up to 50).
 
-## Utilisation
+## Usage
 
-### Exécution du script
+### Running the script
 
-1. Modifiez les valeurs suivantes dans le script :
-   - `YOUTUBE_API_KEY` : Ajoutez votre clé API YouTube.
-   - `SEARCH_QUERY` : Spécifiez le thème de recherche.
-   - `MAX_RESULTS` : Définissez le nombre maximum de vidéos à récupérer (par défaut 10).
+1. Modify the following values in the script:
+   - `YOUTUBE_API_KEY`: Add your YouTube API key.
+   - SEARCH_QUERY`: Specify the search theme.
+   - `MAX_RESULTS`: Set the maximum number of videos to be retrieved (default 10).
 
-2. Exécutez le script pour rechercher des vidéos YouTube et sauvegarder les résultats dans un fichier JSON.
-
-   ```bash
-   python search_youtube.py
+2. Run the script to search for YouTube videos and save the results in a JSON file.
