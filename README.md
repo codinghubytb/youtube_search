@@ -1,4 +1,4 @@
-# Search and Download YouTube Videos #Shorts
+# Search YouTube Videos #Shorts
 
 This project allows you to search for YouTube videos based on a specific theme and save the videos found in a JSON file for later download.
 
